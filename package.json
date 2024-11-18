@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.1"
+  },
+  "name": "spotify-clone",
+  "version": "1.0.0",
+  "description": "here my first HTML,CSS and Js project in which,\r I try to cloning the spotify by implementing \r UI interface And making audio play button workable..",
+  "main": "project.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Ishaan Sharma",
+  "license": "ISC"
+}

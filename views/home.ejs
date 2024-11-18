@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="/logo.png">
+    <title>Spotify - Web Player:Music for everyone</title>
+    <link rel="stylesheet" href="/Project.css">
+</head>
+<body>
+    <!-- In Main Content the whole code lies, as it acts as Parent Container to them -->
+    <div class="main">
+        <!-- Sidebar menu for navigation -->
+        <div class="sidebar">
+            <div class="nav">
+                <div class="nav-option">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#">Home</a>
+                </div>
+                <div class="nav-option">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="#">Search</a>
+                </div>
+            </div>
+            <div class="library">
+                <div class="option">
+                    <div class="lib-option nav-option">
+                    <img src="/library_icon.png" alt="library-icon">
+                    <a href="#">Your library</a>
+                    </div>
+                <div class="icon">
+                    <i class="fa-solid fa-plus"></i>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+                </div>
+                <div class="lib-boxes">
+                    <div class="sub-box-1">
+                    <h4> Create your first playlist</h4>
+                    <p>It's easy, we'll help you..</p>
+                    <button>Create Playlist</button>
+                </div>
+                    <div class="sub-box-2">
+                    <h4> Let's find some podcasts to follow</h4>
+                    <p>We'll keep you updated on new episodes</p>
+                    <button>Browse Podcast</button>
+                    </div>
+               </div>
+            </div>    
+        </div>
+
+        <!-- Main content area -->
+        <div class="main-content">
+            <div class="sticky-nav">
+                <div class="sticky-nav-option">
+                    <img class="backward-slash" src="/backward_icon.png" alt="backward-slash">
+                    <img src="/forward_icon.png" alt="forward-slash">
+                </div>
+                <div class="sticky-nav-button">
+                    <button class="nav-btn premium-button">Explore Premium</button>
+                    <button class="nav-btn dark-button"><i class="fa-regular fa-circle-down"></i>Install Now</button>
+                    <i class="fa-regular fa-user"></i>
+                </div>          
+            </div>
+            <h2>Recently Added</h2>
+            <div class="card-container">
+                <div class="card-content">
+                    <img src="/card1img.jpeg" alt="card-1">
+                    <p class="card-title">Top-58 Global</p>
+                    <p class="card-info">Your daily updates of most played tracks..</p>
+                </div>
+            </div>
+            <h2>Featured Charts</h2>
+            <div class="card-container">
+                <div class="card-content">
+                    <img src="/card3img.jpeg" alt="card-1">
+                    <p class="card-title">Kavali Hits</p>
+                    <p class="card-info">Rahat Fateh Ali Khan</p>
+                </div>
+                <div class="card-content">
+                    <img src="/card4img.jpeg" alt="card-1">
+                    <p class="card-title">Top Hits</p>
+                    <p class="card-info">Bollywood, Hollywood, Pollywood</p>
+                </div>
+                <div class="card-content">
+                    <img src="/card5img.jpeg" alt="card-1">
+                    <p class="card-title">Weekly Top-50</p>
+                    <p class="card-info">This week's top 50 global songs..</p>
+                </div>
+            </div>
+            <h2>Top Charted Albums</h2>
+            <div class="card-container">
+                <div class="card-content">
+                    <img src="/card6img.jpeg.png" alt="card-1">
+                    <p class="card-title">Glory</p>
+                    <p class="card-info">Album Artist: Yo Yo Honey Singh</p>
+                </div>
+                <div class="card-content">
+                    <img src="/card7img.jpeg.png" alt="card-1">
+                    <p class="card-title">The Brownprint</p>
+                    <p class="card-info">Album Artist: AP Dhillon</p>
+                </div>
+                <div class="card-content">
+                    <img src="/card8img.jpeg.png" alt="card-1">
+                    <p class="card-title">The Finest</p>
+                    <p class="card-info">Album Artist: Navaan Sandhu</p>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="line-break"></div>
+            </div>
+        </div>               
+
+        <!-- Music bar -->
+        <div class="music-bar">
+            <div class="currently-playing-song">
+                <img src="<%= data.poster %>" alt="thumbnail">
+            </div>
+            <div class="music-controls">
+                <div class="playing-controls">
+                    <img src="/player_icon1.png" class="music-playing-control-1">
+                    <img src="/player_icon2.png" class="music-playing-control-2">
+                    <button id="play-pause-btn" class="play-pause">
+                        <i class="fa-solid fa-play" id="play-icon"
+                         class="fa-solid fa-pause" id="play-icon"></i>
+                        <audio id="audio-player" src="<%= data.link %>" type="audio/mp3"></audio>
+                    </button>
+                    <img src="/player_icon4.png" class="music-playing-control-4">
+                    <img src="/player_icon5.png" class="music-playing-control-5">
+                    
+                 </div>
+                <div class="playback-bar">
+                    <span class="time">0:00</span>
+                    <input class="playback-timeline" type="range" max="100" class='min="0"' 
+                    class = 'step="1"'  >
+                    <span class="tol-time">3:14</span>
+                </div>
+            </div>
+            <div class="further-controls">
+                <video id="dawn" width="400" height="700"   autoplay loop muted poster preload="auto">>
+                    <source src="<%= data.visuals %>" type="video/mp4">
+                  </video>
+            </div>
+        </div>
+    </div>
+    <script src="/project.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+{
+    "english": {
+        "poster":"/imperfect.png",
+        "link":"/Perfectly-Imperfect.mp3",
+        "visuals":"/Screen Recording 2024-11-15 191528.mp4"  
+    },
+    "indian":{
+        "poster":"/bigdawns.png",
+        "link":"/Big Dawgs - (Raag.Fm).mp3",
+        "visuals":"/Screen Recording 2024-10-06 143537.mp4"
+    },
+    "hindi":{
+        "poster":"/tum mere ho na.png",
+        "link":"/Jo Tum Mere Ho Anuv Jain 128 Kbps.mp3",
+        "visuals":"/mere ho-visual.mp4"
+    },
+    "punjabi":{
+        "poster":"/currentsong2.png",
+        "link":"/Jatt Mehkma - Yo Yo Honey Singh copy.mp3",
+        "visuals":"/Screen Recording 2024-10-06 155639.mp4"
+    }
+    
+}
